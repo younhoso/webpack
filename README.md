@@ -83,8 +83,8 @@ ex) mkdir A-project
   var path = require('path');
 
   module.exports = {
-    entry: './app/index.js',
-    output: {
+    entry: './app/index.js',  // 번들링할 대상을 말한다.
+    output: {                 // 번들링을 했을때 나온는 결과물
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist')
     }
