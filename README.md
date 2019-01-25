@@ -35,7 +35,7 @@ ex) mkdir A-project
     </body>
   </html>
   ```
-  ```
+  ```js
   // index.js
   function component () {
     var element = document.createElement('div');
