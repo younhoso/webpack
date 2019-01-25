@@ -21,7 +21,8 @@ ex) mkdir A-project
 
   ```
   /*터미널*/
-  npm init
+  npm init      //여러 옵션을 설정할때 사용한다.
+  npm init -y   //여러 옵션을 기본값으로 사용할때 쓴다.
   ```
 
 
