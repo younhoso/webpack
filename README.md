@@ -24,7 +24,7 @@ ex) mkdir A-project
 
 3. index.js 및 index.html을 작성하십시오
 
-  ```
+  ```html
   <!-- index.html -->
   <html>
     <head>
