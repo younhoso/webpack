@@ -58,11 +58,23 @@ ex) mkdir A-project
 
 
 
-  4. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
+  5. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
 
   ```
   npm i lodash --save
   ```
+그리고 
+  ```js
+  import _ from 'lodash'; //(추가시켜준다.)
+  
+  function component () {
+    var element = document.createElement('div');
 
+    /* lodash is required for the next line to work */
+    element.innerHTML = _.join(['Hello','webpack'], ' ');
+
+    return element;
+  } 
+  ```
 
   
