@@ -2,6 +2,12 @@
 웹팩 기본에 대해 알아 봅시다.
 
 #### Getting-Started
+0. 프로젝트 폴더를 원하는 위치에 생성한다.
+```
+mkdir 프로젝트명
+ex) mkdir A-project
+```
+
 1. 글로벌로 webpack 설치
 
   ```
