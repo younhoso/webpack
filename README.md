@@ -48,6 +48,8 @@ ex) mkdir A-project
 
     return element;
   }
+  
+  document.body.appendChild(component());
   ```
   
   4. 이 명령을 사용하여 webpack.config.js파일을 생성한다.
@@ -78,6 +80,8 @@ ex) mkdir A-project
 
     return element;
   } 
+  
+  document.body.appendChild(component());
   ```
   6.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
   ```js
