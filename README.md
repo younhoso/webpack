@@ -4,6 +4,7 @@
 #### Getting-Started
 0. 프로젝트 폴더를 원하는 위치에 생성한다.
 ```
+/*터미널*/
 mkdir 프로젝트명
 ex) mkdir A-project
 ```
@@ -11,6 +12,7 @@ ex) mkdir A-project
 1. 글로벌로 webpack 설치
 
   ```
+  /*터미널*/
   npm i webpack -g (처음 webpack 설치할때 필수)
   ```
 
@@ -18,6 +20,7 @@ ex) mkdir A-project
 2. 패키지 json 파일 만들기
 
   ```
+  /*터미널*/
   npm init
   ```
 
@@ -89,4 +92,9 @@ ex) mkdir A-project
       path: path.resolve(__dirname, 'dist')   //__dirname라고한것을 절대경로를 현재 폴더까지 생략해서 __dirname라고만 칭하는 것이다. 
     }
   };
+  ```
+  7. webpack 빌드
+  ```
+  /*터미널*/
+  webpack
   ```
