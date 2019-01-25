@@ -64,6 +64,7 @@ ex) mkdir A-project
   5. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
 
   ```
+  /*터미널*/
   npm i lodash --save
   ```
   그리고 import 코드를 추가시켜준다.
