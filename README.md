@@ -56,9 +56,7 @@ ex) mkdir A-project
   ```
   ![alt text](http://younhoso.co.kr/webpackImg/webpack1.png)<br/>
   사진과 같이
-  <strong>node_modules,</strong> 
-  <strong>web pack.config.js</strong> 파일이 생성된것을 확인 할수 있다.
-
+  <strong>node_modules,</strong> 파일이 생성된것을 확인 할수 있다.
 
 
   5. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
@@ -81,7 +79,7 @@ ex) mkdir A-project
     return element;
   } 
   ```
-  6. webpack.config.js 파일에 아래 코드를 추가 시켜준다.
+  6.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
   ```js
   //webpack.config.js
   var path = require('path');
