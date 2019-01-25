@@ -52,5 +52,5 @@ ex) mkdir A-project
   npm i lodash --save
   ```
 
-  
+![alt text](https://drive.google.com/open?id=1AC4IOlDrqZmlUcH2K-iLKZyHm22ZgFpg)
   
