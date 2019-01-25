@@ -65,6 +65,7 @@ ex) mkdir A-project
   ```
 그리고 
   ```js
+  // index.js
   import _ from 'lodash'; //(추가시켜준다.)
   
   function component () {
