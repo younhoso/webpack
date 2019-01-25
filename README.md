@@ -63,7 +63,7 @@ ex) mkdir A-project
   ```
   npm i lodash --save
   ```
-그리고 
+그리고 import 코드를 추가시켜준다.
   ```js
   // index.js
   import _ from 'lodash'; //(추가시켜준다.)
@@ -77,5 +77,15 @@ ex) mkdir A-project
     return element;
   } 
   ```
+  ```js
+  //webpack.config.js
+  var path = require('path');
 
-  
+  module.exports = {
+    entry: './app/index.js',
+    output: {
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist')
+    }
+  };
+  ```
