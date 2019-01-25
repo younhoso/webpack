@@ -5,7 +5,7 @@
 1. 글로벌로 webpack 설치
 
   ```js
-  npm i webpack -g
+  npm i webpack -g (처음 webpack 설치할때 필수)
   ```
 
 
