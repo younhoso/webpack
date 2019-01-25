@@ -53,8 +53,8 @@ ex) mkdir A-project
   ```
   ![alt text](http://younhoso.co.kr/webpackImg/webpack1.png)<br/>
   사진과 같이
-  <h1>node_modules,</h1> 
-  <h1>web pack.config.js</h1> 파일이 생성된것을 확인 할수 있다.
+  <strong>node_modules,</strong> 
+  <strong>web pack.config.js</strong> 파일이 생성된것을 확인 할수 있다.
 
 
 
