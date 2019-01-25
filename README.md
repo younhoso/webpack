@@ -51,7 +51,7 @@ ex) mkdir A-project
   ```
   npm install webpack --save-dev 
   ```
-  ![alt text](http://younhoso.co.kr/webpackImg/webpack1.png)
+  ![alt text](http://younhoso.co.kr/webpackImg/webpack1.png)<br/>
   사진과 같이
   node_modules, 
   web pack.config.js 파일이 생성된것을 확인 할수 있다.
