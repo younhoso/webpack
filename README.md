@@ -52,5 +52,5 @@ ex) mkdir A-project
   npm i lodash --save
   ```
 
-![alt text](https://drive.google.com/file/d/1AC4IOlDrqZmlUcH2K-iLKZyHm22ZgFpg/view?usp=sharing)
+![alt text](http://younhoso.co.kr/webpackImg/webpack1.png)
   
