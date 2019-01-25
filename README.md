@@ -15,3 +15,18 @@
   npm init
   ```
 
+
+3. index.js 및 index.html을 작성하십시오
+
+  ```
+  <!-- index.html -->
+  <html>
+    <head>
+      <title>webpack 2 demo</title>
+      <script src="https://unpkg.com/lodash@4.16.6"></script>
+    </head>
+    <body>
+      <script src="app/index.js"></script>
+    </body>
+  </html>
+  ```
