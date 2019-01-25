@@ -40,6 +40,11 @@
     return element;
   }
   ```
-  
+  4. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
+
+  ```
+  npm i lodash --save
+  ```
+
   
   
