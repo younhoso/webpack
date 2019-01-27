@@ -144,9 +144,11 @@ ex) mkdir A-project
   ----------------------------
   };
   ```
+ 6.번들링할 대상 파일에서(index.js) scss파일도 불러온다.
  ```js
   // index.js
-  import _ from 'lodash'; //(추가시켜준다.)
+  import '../styles/scss/style.scss';//(추가시켜준다.)
+  import _ from 'lodash'; 
   
   function component () {
     var element = document.createElement('div');
@@ -158,4 +160,9 @@ ex) mkdir A-project
   
   document.body.appendChild(component());
   ```
-
+  7. webpack 빌드
+  장점: webpack.config.js를 구성하고, webpack라고만 명령어 치면 자동으로 webpack.config.js파일을 찾는다. 그리고 그안에 로직대로 빌드를 실행한다.
+  ```
+  /*터미널*/
+  webpack
+  ```
