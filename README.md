@@ -103,4 +103,4 @@ ex) mkdir A-project
   ```
   
   
-# Webpack scss 사용방법
+# Webpack scss build 사용방법
