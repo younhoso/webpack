@@ -116,7 +116,7 @@ ex) mkdir A-project
   npm i sass-loader node-sass webpack style-loader css-loader --save-dev
   ```
   
-5.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
+  5. webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
   ```js
   //webpack.config.js
   var path = require('path');
@@ -144,7 +144,7 @@ ex) mkdir A-project
   ----------------------------
   };
   ```
- 6.번들링할 대상 파일에서(index.js) scss파일도 불러온다.
+  6. 번들링할 대상 파일에서(index.js) scss파일도 불러온다.
  ```js
   // index.js
   import '../styles/scss/style.scss';//(추가시켜준다.)
