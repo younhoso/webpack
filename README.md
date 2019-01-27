@@ -106,13 +106,42 @@ ex) mkdir A-project
 # Webpack scss build 사용방법
 
 #### Getting-Started
-0. 프로젝트 폴더를 원하는 위치에 생성한다.
 
+초반 세팅은 위에서 3번 내용까지 동일합니다.
 
-
-1. 글로벌로 webpack 설치
-
+4. 이 명령을 사용하여 webpack에서 sass build 하기위해 필요한 모든 라이브러리를 철시한다.
+  
   ```
   /*터미널*/
-  npm i webpack -g (처음 webpack 설치할때 필수)
+  npm i sass-loader node-sass webpack style-loader css-loader --save-dev
   ```
+  
+5.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
+  ```js
+  //webpack.config.js
+  var path = require('path');
+
+  module.exports = {
+    entry: './app/index.js',  // 번들링할 대상을 말한다.
+    output: {                 // 번들링을 했을때 나오는 결과물
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist')   //__dirname라고한것을 절대경로를 현재 폴더까지 생략해서 __dirname라고만 칭하는 것이다. 
+    }
+  },
+  ----------------------------
+  module: {
+    rules: [
+        {
+          test: /\.scss$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader'
+          ]
+        }
+    ]
+  }
+  ----------------------------
+  ```
+
+
