@@ -56,7 +56,7 @@ ex) mkdir A-project
   ```
   npm install webpack --save-dev 
   ```
-  ![alt text](http://younhoso.co.kr/webpackImg/webpack1.png)<br/>
+  ![alt text](http://younhoso.co.kr/webtestImg/webpack1.png)<br/>
   사진과 같이
   <strong>node_modules</strong> 파일이 생성된것을 확인 할수 있다.
 
@@ -167,6 +167,6 @@ ex) mkdir A-project
   webpack
   ```
   
-  ![alt text](http://younhoso.co.kr/webpackImg/webpack2.png)<br/> 
+  ![alt text](http://younhoso.co.kr/webtestImg/webpack2.png)<br/> 
   다음과 같은 순서대로 빌드된다.
   
