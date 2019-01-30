@@ -84,9 +84,14 @@ ex) mkdir A-project
   document.body.appendChild(component());
   ```
   6.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
+  ```
+  /*터미널*/
+  npm install path --save
+  ```
+  
   ```js
   //webpack.config.js
-  var path = require('path');
+  var path = require('path'); //path 라이브러리 불러오기
 
   module.exports = {
     entry: './app/index.js',  // 번들링할 대상을 말한다.
