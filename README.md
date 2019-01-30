@@ -54,7 +54,8 @@ ex) mkdir A-project
   
   4. 이 명령을 사용하여 node_modules파일을 생성한다.
   ```
-  npm install webpack --save-dev 
+  npm install webpack webpack-cli -g 
+  //webpack-cli는 webpack이 버전 4.5이상 바전이 올라가면서 같이 꼭 설치를해야한다.
   ```
   ![alt text](http://younhoso.co.kr/webtestImg/webpack1.png)<br/>
   사진과 같이
