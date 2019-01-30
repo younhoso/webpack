@@ -207,5 +207,4 @@ ex) mkdir A-project
       return element;
       }
     document.body.appendChild(component());
-
     ```
