@@ -208,3 +208,34 @@ ex) mkdir A-project
     }
   document.body.appendChild(component());
   ```
+  ```js
+  /*webpack.config*/
+
+  var const = require('path');
+  const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+  module.exports = {
+    entry: './app/index.ts',  // 번들링할 대상 확장자를 변경해줘야 한다.
+    output: {                 // 번들링을 했을때 나오는 결과물
+      filename: 'main.js',
+      path: path.resolve(__dirname, 'dist')   //__dirname라고한것을 절대경로를 현재 폴더까지 생략해서 __dirname라고만 칭하는 것이다. 
+    }
+  },
+  ---------------------------- //다음내용 추가
+    module: {   //module가 바로 Loader을 말한다.
+      rules: [
+            {
+                test: /\.scss$/,      //정규표현식에서 확장자가 .scss 모든 파일에대해서 style-loader, css-loader, sass-loader를 하겠다. 의미
+                use: ExtractTextPlugin.extract({
+                    fallback:'style-loader',
+                    use: ['css-loader', 'sass-loader']
+                })
+            }
+        ]
+    },
+     plugins: [
+        new ExtractTextPlugin('styles.css'),
+    ]
+  ----------------------------
+  };
+  ```
