@@ -239,3 +239,34 @@ ex) mkdir A-project
   ----------------------------
   };
   ```
+  ```js
+  /*package.json*/
+  {
+    "name": "webpacktest2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [ ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jquery": "^3.3.29",
+        "@types/lodash": "^4.14.120",
+        "css-loader": "^2.1.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "ts-loader": "^5.3.3",
+        "webpack": "^4.29.0"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "lodash": "^4.17.11",
+        "path": "^0.12.7",
+    }
+  }
+  ```
