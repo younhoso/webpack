@@ -176,3 +176,36 @@ ex) mkdir A-project
   ![alt text](http://younhoso.co.kr/webtestImg/webpack2.png)<br/> 
   다음과 같은 순서대로 빌드된다.
   
+  
+  
+  # Webpack TypeScript build 사용방법
+  
+  #### Getting-Started
+  
+  초반 세팅은 위에서 3번 내용까지 동일합니다.
+  
+  4.webpack에서 TypeScript build 하기위해 필요한 라이브러리는 없다.<br/>
+  다만 주의해야 할게 있다.<br>
+  
+    4-1 index.js -> index.ts 확장자를 변경한다.    
+    4-2 그럼 import 해오는 lodash 라이브러리를 인식 못할것이다. 
+    ```
+     /*터미널*/
+     npm install @types/lodash --save-dev;  //ts로 확장자 변경하면 npm install할때 @types를 꼭 붙여줘야한다.(다른 라이브러리도 모두 마찬가지다)
+     npm install @types/jquery --save-dev;  //ts로 확장자 변경하면 npm install할때 @types를 꼭 붙여줘야한다.(다른 라이브러리도 모두 마찬가지다)
+    ```
+    
+    ```js
+    /*index.ts*/
+
+    import * as _ from 'lodash';  // import 구문을 이렇게 수정해줘야한다.
+    function component () {
+      var element = document.createElement('div');
+
+      element.innerHTML = _.join(['Hello','webpack'], ' ');
+
+      return element;
+      }
+    document.body.appendChild(component());
+
+    ```
