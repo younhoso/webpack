@@ -187,8 +187,8 @@ ex) mkdir A-project
   4.webpack에서 TypeScript build 하기위해 필요한 라이브러리는 없다.<br/>
   다만 주의해야 할게 있다.<br>
   
-    4-1 index.js -> index.ts 확장자를 변경한다.    
-    4-2 그럼 import 해오는 lodash 라이브러리를 인식 못할것이다. 
+  4-1 index.js -> index.ts 확장자를 변경한다.    
+  4-2 그럼 import 해오는 lodash 라이브러리를 인식 못할것이다. 
     ```
      /*터미널*/
      npm install @types/lodash --save-dev;  //ts로 확장자 변경하면 npm install할때 @types를 꼭 붙여줘야한다.(다른 라이브러리도 모두 마찬가지다)
