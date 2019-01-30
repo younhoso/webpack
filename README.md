@@ -14,7 +14,7 @@ ex) mkdir A-project
   ```
   /*터미널*/
   npm install webpack webpack-cli -g   (처음 webpack 설치할때 필수)
-  //webpack-cli는 webpack이 버전 4.5이상 바전이 올라가면서 같이 꼭 설치를해야한다.
+  //webpack-cli는 webpack이 버전 4.5이상 버전이 올라가면서 같이 꼭 설치를해야한다.
   ```
 
 2. 패키지 json 파일 만들기
