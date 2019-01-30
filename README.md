@@ -178,7 +178,7 @@ ex) mkdir A-project
   
   
   
-  # Webpack TypeScript build 사용방법
+  # Webpack TypeScript build 사용방법 및 css파일 외부로 불리하기
   
   #### Getting-Started
   
