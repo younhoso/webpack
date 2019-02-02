@@ -210,8 +210,8 @@ ex) mkdir A-project
   ```js
   /*webpack.config*/
 
-  var const = require('path');
-  const ExtractTextPlugin = require('extract-text-webpack-plugin'); //css로 컴파일된 파일 외부로 불리해서 따라 생성시키기 위한 라이브러리
+  const path = require('path');
+  const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //css파일로 컴파일해 별도의 파일로 불리해서 따라 생성시키기 위한 플러그인
 
   module.exports = {
     entry: './app/index.ts',  // 번들링할 대상 확장자를 변경해줘야 한다.
