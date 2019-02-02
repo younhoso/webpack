@@ -255,7 +255,10 @@ ex) mkdir A-project
         "@types/jquery": "^3.3.29",
         "@types/lodash": "^4.14.120",
         "css-loader": "^2.1.0",
-        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0", 
+        // extract-text-webpack-plugin 사용하지 마세요!! 지우지 않고 여기에 작성한 이유는 이런 플러그인도 있다는 걸 보여주기 위함입니다.
+         "mini-css-extract-plugin": "^0.5.0",
+        //extract-text-webpack-plugin 대신 mini-css-extract-plugin을 사용하세요!!
         "node-sass": "^4.11.0",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
