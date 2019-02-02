@@ -137,15 +137,19 @@ ex) mkdir A-project
     module: {
       rules: [
           {
-            test: /\.scss$/,
-            use: [
-              'style-loader',
-              'css-loader',
-              'sass-loader'
-            ]
+            test: /\.css$/,
+            use: [{
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                publicPath: '../'
+              }
+            },"css-loader"]
           }
       ]
     },
+    plugins :[
+      new MiniCssExtractPlugin()
+    ]
   ----------------------------
   };
   ```
