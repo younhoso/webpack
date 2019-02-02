@@ -225,19 +225,22 @@ ex) mkdir A-project
     }
   },
   ---------------------------- //다음내용 추가
-    module: {   //module가 바로 Loader을 말한다.
+    module: {
       rules: [
-            {
-                test: /\.scss$/,      //정규표현식에서 확장자가 .scss 모든 파일에대해서 style-loader, css-loader, sass-loader를 하겠다. 의미
-                use: ExtractTextPlugin.extract({
-                    fallback:'style-loader',
-                    use: ['css-loader', 'sass-loader']
-                })
-            }
-        ]
+          {
+            test: /\.css$/,
+            use: [{
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                publicPath: '../'
+              }
+            },"css-loader"]
+          }
+      ]
     },
-     plugins: [
-        new ExtractTextPlugin('styles.css'),
+
+    plugins :[
+      new MiniCssExtractPlugin()
     ]
   ----------------------------
   };
