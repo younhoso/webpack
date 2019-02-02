@@ -132,8 +132,7 @@ ex) mkdir A-project
     output: {                 // 번들링을 했을때 나오는 결과물
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist')   //__dirname라고한것을 절대경로를 현재 폴더까지 생략해서 __dirname라고만 칭하는 것이다. 
-    }
-  },
+ },
   ---------------------------- //다음내용 추가
     module: {
       rules: [
