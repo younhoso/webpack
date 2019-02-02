@@ -138,18 +138,10 @@ ex) mkdir A-project
       rules: [
           {
             test: /\.css$/,
-            use: [{
-              loader: MiniCssExtractPlugin.loader,
-              options: {
-                publicPath: '../'
-              }
-            },"css-loader"]
+            use: ['style-loader','css-loader']
           }
       ]
     },
-    plugins :[
-      new MiniCssExtractPlugin()
-    ]
   ----------------------------
   };
   ```
@@ -228,7 +220,7 @@ ex) mkdir A-project
     module: {
       rules: [
           {
-            test: /\.css$/,
+            test: /\.scss$/,
             use: [{
               loader: MiniCssExtractPlugin.loader,
               options: {
