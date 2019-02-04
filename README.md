@@ -217,15 +217,27 @@ ex) mkdir A-project
     }
   },
   ---------------------------- //다음내용 추가
-    module: {
+      module: {
       rules: [
-          {
+          { // scss
             test: /\.scss$/,
             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-          }
+          },
+          { // images css에서 background-image 속성 사용할때 필요하다. 
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                    context: path.resolve(__dirname, "src/"),
+                    outputPath: 'dist/'
+                }
+              }
+            ]
+          },
       ]
     },
-
     plugins: [
       new MiniCssExtractPlugin({
         filename: 'styles.css',
@@ -255,6 +267,7 @@ ex) mkdir A-project
         "css-loader": "^2.1.0",
         "extract-text-webpack-plugin": "^4.0.0-beta.0", 
         // extract-text-webpack-plugin 사용하지 마세요!! 지우지 않고 여기에 작성한 이유는 이런 플러그인도 있다는 걸 보여주기 위함입니다.
+         "file-loader": "^3.0.1",
          "mini-css-extract-plugin": "^0.5.0",
         //extract-text-webpack-plugin 대신 mini-css-extract-plugin을 사용하세요!!
         "node-sass": "^4.11.0",
