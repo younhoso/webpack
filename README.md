@@ -221,18 +221,17 @@ ex) mkdir A-project
       rules: [
           {
             test: /\.scss$/,
-            use: [{
-              loader: MiniCssExtractPlugin.loader,
-              options: {
-                publicPath: '../'
-              }
-            },"css-loader"]
+            use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
           }
       ]
     },
 
-    plugins :[
-      new MiniCssExtractPlugin()
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: 'styles.css',
+        disable: false,
+        allChunks: true
+      })
     ]
   ----------------------------
   };
