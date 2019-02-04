@@ -168,7 +168,7 @@ ex) mkdir A-project
   webpack
   ```
   
-  ![alt text](http://younhoso.co.kr/webtestImg/webpack2.png)<br/> 
+  ![alt text](http://younhoso.synology.me/web_images/webpack2.png)<br/> 
   다음과 같은 순서대로 빌드된다.
   
   
