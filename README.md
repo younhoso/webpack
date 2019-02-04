@@ -230,7 +230,6 @@ ex) mkdir A-project
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]',
-                    context: path.resolve(__dirname, "images/"),
                     outputPath: 'dist/'
                 }
               }
