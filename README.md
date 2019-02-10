@@ -224,7 +224,7 @@ ex) mkdir A-project
             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
           },
           { // images css에서 background-image 속성 사용할때 필요하다. 
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|svg|jpg|gif)$/,
             use: [
               {
                 loader: 'file-loader',
