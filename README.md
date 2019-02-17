@@ -223,6 +223,16 @@ ex) mkdir A-project
             test: /\.scss$/,
             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
           },
+          { //babel es2015
+            test: /\.js$/,
+            include: path.resolve(__dirname, 'dist'),
+            use: {
+              loader:'babel-loader',
+              options: {
+                presets: ['es2015', {modules: false}]
+              }
+            }
+          },
           { // images css에서 background-image 속성 사용할때 필요하다. 
             test: /\.(png|svg|jpg|gif)$/,
             use: [
