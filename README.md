@@ -210,7 +210,7 @@ ex) mkdir A-project
   const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //css파일로 컴파일해 별도의 파일로 불리해서 따라 생성시키기 위한 플러그인
 
   module.exports = {
-    entry: './app/index.ts',  // 번들링할 대상 확장자를 변경해줘야 한다.
+    entry: './app/index.ts',  // 번들링할 대상을 말한다.
     output: {                 // 번들링을 했을때 나오는 결과물
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist')   //__dirname라고한것을 절대경로를 현재 폴더까지 생략해서 __dirname라고만 칭하는 것이다. 
@@ -223,7 +223,7 @@ ex) mkdir A-project
             test: /\.scss$/,
             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
           },
-          { //babel es2015
+          { //babel es2015 
             test: /\.js$/,
             include: path.resolve(__dirname, 'dist'),
             use: {
