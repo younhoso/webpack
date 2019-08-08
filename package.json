@@ -12,6 +12,7 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
     "lodash": "^4.17.11"
   },
   "keywords": [],
