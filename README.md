@@ -75,7 +75,7 @@ ex) mkdir A-project
   
   document.body.appendChild(component());
   ```
-  5.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
+  5.수동으로 webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
   ```
   /*터미널*/
   npm install path --save
