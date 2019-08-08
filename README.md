@@ -55,7 +55,7 @@ ex) mkdir A-project
   4. 이 명령을 사용하여 node_modules파일을 생성한다.
 
 ```
-
+npm install webpack --seve-dev
 ```
 
 
