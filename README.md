@@ -54,6 +54,10 @@ ex) mkdir A-project
   
   4. 이 명령을 사용하여 node_modules파일을 생성한다.
 
+```
+
+```
+
 
   5. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
 
