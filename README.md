@@ -17,7 +17,7 @@ ex) mkdir A-project
   //webpack-cli는 webpack이 버전 4.5이상 버전이 올라가면서 같이 꼭 설치를해야한다.
   ```
 
-2. 패키지 json 파일 만들기
+2. package json 파일 만들기
 
   ```
   /*터미널*/
@@ -52,18 +52,12 @@ ex) mkdir A-project
   document.body.appendChild(component());
   ```
   
-  4. 이 명령을 사용하여 node_modules파일을 생성한다.
-
-```
-npm install webpack --seve-dev
-```
-
-
-  5. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
+  4. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
+  (node_modules파일을 생성한다.)
 
   ```
   /*터미널*/
-  npm i lodash --save
+  npm i lodash --save 
   npm install webpack lodash --seve-dev //이렇게 같이 설치해도 상관없다.
   ```
   그리고 import 코드를 추가시켜준다.
@@ -81,7 +75,7 @@ npm install webpack --seve-dev
   
   document.body.appendChild(component());
   ```
-  6.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
+  5.webpack.config.js파일을 생성하고, 아래 코드를 추가 시켜준다.
   ```
   /*터미널*/
   npm install path --save
@@ -99,7 +93,7 @@ npm install webpack --seve-dev
     }
   };
   ```
-  7. webpack 빌드
+  6. webpack 빌드
   장점: webpack.config.js를 구성하고, webpack라고만 명령어 치면 자동으로 webpack.config.js파일을 찾는다. 그리고 그안에 로직대로 빌드를 실행한다.
   ```
   /*터미널*/
