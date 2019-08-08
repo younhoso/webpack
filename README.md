@@ -58,7 +58,7 @@ ex) mkdir A-project
   ```
   /*터미널*/
   npm i lodash --save 
-  npm install webpack lodash --seve-dev //이렇게 같이 설치해도 상관없다.
+  npm install webpack lodash --seve-dev //이렇게 두개를 같이 설치해도 상관없다.
   ```
   그리고 import 코드를 추가시켜준다.
   ```js
