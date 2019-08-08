@@ -53,12 +53,6 @@ ex) mkdir A-project
   ```
   
   4. 이 명령을 사용하여 node_modules파일을 생성한다.
-  ```
-  npm install webpack --seve-dev
-  ```
-  ![alt text](http://younhoso.synology.me/web_images/webpack1.png)<br/>
-  사진과 같이
-  <strong>node_modules</strong> 파일이 생성된것을 확인 할수 있다.
 
 
   5. 이 명령을 사용하여 lodash 라이브러리를 설치하십시오.
