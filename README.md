@@ -250,8 +250,8 @@ ex) mkdir A-project
     },
     plugins: [
      new HtmlWebPackPlugin({
-        template: "./public/index.html",
-        filename: "./index.html"
+        template: "./public/index.html",   // 번들링할 대상을 말한다.
+        filename: "./index.html"           // 번들링을 했을때 나오는 결과물
       }),
       new MiniCssExtractPlugin({
         filename: 'styles.css',
