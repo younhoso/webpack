@@ -225,6 +225,13 @@ ex) mkdir A-project
               }
             }
           },
+          {  // jsx에서 html-loader 사용할때 필요하다. 
+          test: /\.(js|jsx)$/,
+           exclude: /node_modules/,
+           use: {
+             loader: "html-loader"
+           }
+          },
           { // images css에서 background-image 속성 사용할때 필요하다. 
             test: /\.(png|svg|jpg|gif)$/,
             use: [
@@ -237,9 +244,14 @@ ex) mkdir A-project
               }
             ]
           },
+          
       ]
     },
     plugins: [
+     new HtmlWebPackPlugin({
+        template: "./public/index.html",
+        filename: "./index.html"
+      }),
       new MiniCssExtractPlugin({
         filename: 'styles.css',
         disable: false,
