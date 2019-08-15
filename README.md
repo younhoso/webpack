@@ -278,13 +278,16 @@ ex) mkdir A-project
     "devDependencies": {
         "@types/jquery": "^3.3.29",
         "@types/lodash": "^4.14.120",
-        "css-loader": "^2.1.0",
+        
         "extract-text-webpack-plugin": "^4.0.0-beta.0", 
         // extract-text-webpack-plugin 사용하지 마세요!! 지우지 않고 여기에 작성한 이유는 이런 플러그인도 있다는 걸 보여주기 위함입니다.
          "file-loader": "^3.0.1",
          "mini-css-extract-plugin": "^0.5.0",
         //extract-text-webpack-plugin 대신 mini-css-extract-plugin을 사용하세요!!
         "html-loader": "^0.5.5",
+        "css-loader": "^2.1.0",
+        "file-loader": "^4.2.0",
+        "babel-loader": "^8.0.6",
         "html-webpack-plugin": "^3.2.0",
         "mini-css-extract-plugin": "^0.8.0",
         "node-sass": "^4.11.0",
