@@ -284,6 +284,7 @@ ex) mkdir A-project
          "file-loader": "^3.0.1",
          "mini-css-extract-plugin": "^0.5.0",
         //extract-text-webpack-plugin 대신 mini-css-extract-plugin을 사용하세요!!
+        "html-loader": "^0.5.5",
         "html-webpack-plugin": "^3.2.0",
         "mini-css-extract-plugin": "^0.8.0",
         "node-sass": "^4.11.0",
