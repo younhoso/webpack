@@ -284,11 +284,15 @@ ex) mkdir A-project
          "file-loader": "^3.0.1",
          "mini-css-extract-plugin": "^0.5.0",
         //extract-text-webpack-plugin 대신 mini-css-extract-plugin을 사용하세요!!
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
         "node-sass": "^4.11.0",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
         "ts-loader": "^5.3.3",
-        "webpack": "^4.29.0"
+        "webpack": "^4.39.2",
+        "webpack-cli": "^3.3.6",
+        "webpack-dev-server": "^3.8.0"
     },
     "dependencies": {
         "jquery": "^3.3.1",
